@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animals</title>
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div id="wrapper">
+   <div class="container">
+     <div class="up">
+       <div class="bee" onClick="EvalSound('audio1')"><img src="images/bee.png"></div>
+       <div class="sun" onClick="EvalSound('audio2')"><img src="images/sun.png"></div>
+       <div class="clear"></div>
+     </div>
+     <div class="down">
+       <div class="cow" onClick="EvalSound('audio3')"><img src="images/cow.png"></div>
+       <div class="horsey" onClick="EvalSound('audio4')"><img src="images/horsey.png"></div>
+       <div class="clear"></div>
+     </div>
+   </div>
+   <div class="buttons">
+      <div class="button1" onClick="EvalSound('audio6')"><p>Nature</p></div>
+      <div class="button2" onClick="EvalSound('audio5')">Splash</div>
+   </div>
+   <script>
+      function EvalSound(soundobj) {
+  var thissound=document.getElementById(soundobj);
+  thissound.play();
+}
+   </script>
+       <audio id="audio1" src="sounds/bee.wav" autobuffer></audio>
+      <audio id="audio2" src="sounds/sun.wav" autobuffer></audio>
+      <audio id="audio3" src="sounds/moo.wav" autobuffer></audio>
+      <audio id="audio4" src="sounds/horsey.wav" autobuffer></audio>
+      <audio id="audio5" src="sounds/Splash.wav" autobuffer></audio>
+      <audio id="audio6" src="sounds/forestnight.wav" autobuffer></audio>
+</div>
+</body>
+</html>

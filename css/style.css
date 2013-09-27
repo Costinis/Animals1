@@ -1,0 +1,68 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+}
+.container {
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 520px;
+}
+.clear {
+	clear: both;
+}
+
+.bee {
+	float: left;
+	margin-top: 180px;
+	margin-left: 45px;
+}
+.bee img {
+	width: 90px;
+}
+
+.sun {
+	float: right;
+	margin-top: 86px;
+	margin-right: 30px;
+}
+.cow {
+	float: left;
+	margin-top: 75px;
+	margin-left: 20px;
+}
+.horsey {
+	float: right;
+	margin-top: 80px;
+}
+.buttons {
+	height: 49px;
+}
+.button1 {
+	float: left;
+	width: 160px;
+	background-image: url(../images/button.png);
+	background-repeat: no-repeat;
+	height: 49px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 46px;
+}
+.button2 {
+	background-image: url(../images/button.png);
+	background-repeat: no-repeat;
+	height: 49px;
+	width: 160px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 46px;
+}
