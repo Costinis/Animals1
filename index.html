@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Animals</title>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 <script src="js/jquery.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -12,7 +13,7 @@
 <div id="wrapper">
    <div class="container">
      <div class="up">
-       <div class="bee" onClick="EvalSound('audio1')"><img src="images/bee.png"></div>
+       <div class="bee" onClick="playAudio('beep.mp3')"><img src="images/bee.png"></div>
        <div class="sun" onClick="EvalSound('audio2')"><img src="images/sun.png"></div>
        <div class="clear"></div>
      </div>
@@ -26,6 +27,28 @@
       <div class="button1" onClick="EvalSound('audio6')"><p>Nature</p></div>
       <div class="button2" onClick="EvalSound('audio5')">Splash</div>
    </div>
+   
+ <script>
+     function playAudio(src) {
+       if (device.platform == 'Android') {
+        src = '/android_asset/www/' + src;
+       }
+ 
+     var media = new Media(src, success, error_error);
+ 
+     media.play();
+     }
+ 
+     function success() {
+     // ignore
+     }
+ 
+     function error_error(e) {
+     alert('great error');
+     alert(e.message);
+   }
+ </script>
+   
    <script>
       function EvalSound(soundobj) {
   var thissound=document.getElementById(soundobj);
